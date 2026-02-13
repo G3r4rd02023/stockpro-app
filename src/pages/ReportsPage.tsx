@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
     BarChart,
     Bar,
@@ -19,8 +19,7 @@ import {
     Package,
     AlertTriangle,
     FileText,
-    ArrowUpRight,
-    ArrowDownRight
+    ArrowUpRight
 } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { toast } from 'sonner';
@@ -157,9 +156,9 @@ const ReportsPage = () => {
                                     cursor={{ fill: '#f8fafc' }}
                                     contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 10px 15px -3px rgb(0 0 0 / 0.1)' }}
                                 />
-                                <Bar dataKey="value" name="Valor ($)">
+                                <Bar dataKey="value" name="Valor ($)" radius={[6, 6, 0, 0]}>
                                     {inventoryValueData.map((entry, index) => (
-                                        <Cell key={`cell-${index}`} fill={entry.color} radius={[6, 6, 0, 0]} />
+                                        <Cell key={`cell-${index}`} fill={entry.color} />
                                     ))}
                                 </Bar>
                             </BarChart>

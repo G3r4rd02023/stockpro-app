@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Plus, Pencil, Trash2, X, Search, AlertTriangle, Eye } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
 import { Label } from '../components/ui/label';
 import { toast } from 'sonner';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { productService } from '../services/productService';
 import { categoryService } from '../services/categoryService';
 import type { Product, CreateProductRequest } from '../types/product.types';

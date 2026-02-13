@@ -9,7 +9,6 @@ import {
     Boxes,
     ClipboardList,
     Menu,
-    X,
     AlertCircle,
     Camera,
     PieChart

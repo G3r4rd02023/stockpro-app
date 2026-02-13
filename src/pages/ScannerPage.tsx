@@ -70,7 +70,7 @@ const ScannerPage = () => {
         }
     };
 
-    const onScanFailure = (error: any) => {
+    const onScanFailure = () => {
         // Standard scanner failure (no QR in frame) - we don't notify user here
     };
 

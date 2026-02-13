@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import {
     ArrowLeft,
@@ -9,9 +9,7 @@ import {
     Package,
     DollarSign,
     BarChart3,
-    Clock,
-    Tag,
-    History
+    Tag
 } from 'lucide-react';
 import { QRCodeCanvas } from 'qrcode.react';
 import { Button } from '../components/ui/button';
